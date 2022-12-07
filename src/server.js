@@ -11,6 +11,7 @@ const cors = require('cors');
 
 //Add controllers
 const Login = require('./controllers/login');
+const Home = require('./controllers/home');
 //import Base from '../../src/client/components/Base';
 //var Language = helpers.Language;
 const app = express();
@@ -25,7 +26,7 @@ app.engine('ejs', require('express-ejs-extend'));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../src/views'));
 app.set("port", process.env.PORT || 3001);
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 // parse requests of content-type - application/json
 app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
@@ -33,8 +34,8 @@ app.use(express.json());
 //Ajustes de variables de entorno
 app.use('/public', express.static(path.join(__dirname, "../public")));
 app.use(`/login`, Login);
-
+app.use(`/home`, Home);
 app.get("/", (req, res) => {
-   res.json({ message: "Welcome to " + process.env.APP_NAME + " application." });
+   res.redirect("/login");
 });
 module.exports = app;

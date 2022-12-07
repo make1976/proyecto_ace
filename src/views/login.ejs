@@ -6,151 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100wv;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
-
-        .contenedor_saludo {
-            font-family: Arial, Helvetica, sans-serif;
-            width: 50vw;
-            height: 100vh;
-            background-image: url("./public/img/img_nieve.jpg");
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;    
-        }
-
-        .contenedor_saludo > .presentacion {
-            font-size: 1rem;
-            font-weight: 800;
-            width: 100%;
-            margin-left: 2rem;
-            height: 20%;
-        }
-
-        .info-saludo {
-           width: 100%;
-           height: 90%;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-
-        }
-
-        .info-saludo > .parrafo {
-            color: #6cb4e4;
-            font-size: 1.5rem;
-            text-shadow: 0 0 5px #0B0D05;
-            
-        }
-
-        .info-saludo > h1 {
-            color: #0B0D05;
-            font-size: 3rem;
-            text-align: center;
-        }
-
-        .info-saludo > .parrafo2 {
-            color: #0B0D05;
-            font-weight: 800;
-            text-align: justify;
-        }
-
-        .contenedor_login {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contenedor_login > .encabezado-login {
-            width: 100%;
-            height: 30%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .contenedor_login > .encabezado-login > h2 {
-            font-size: 2rem;
-            font-style: italic;
-            color: #4dace4;
-        }
-
-        .contenedor_login > .encabezado-login > p {
-            padding: 2rem;
-            text-align: center;
-        }
-        .frm-login {
-            width: 30rem;
-            height: 18rem;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: groove 2px #4dace4;
-            box-shadow: 0 0 10px #454546;
-            padding: 1rem;
-        }
-
-        .frm-login > input {
-            margin: 1rem;
-            border-radius: 5px;
-            width: 80%;
-            font-size: 1.2rem;
-        }
-
-        .frm-login > p {
-            font-weight: 600;
-            color: #4dace4;
-        }
-
-        .frm-login > button {
-            width: 15rem;
-            border-radius: 25px;
-            font-size: 1.2rem;
-            background-color: #4da0e4;
-            color: #fff;
-            margin-top: 2rem;
-        }
-
-        .frm-login > button:hover,
-        .frm-login > button:focus {
-            background-color: #11d0e9;
-            color: #fefefe;
-            cursor: pointer;
-            box-shadow: 0 0 10px #125df5;
-        }
-    </style>
+    <link rel="stylesheet" href="/public/css/login.css">
 </head>
 
 <body>
     <div class="contenedor_saludo">
-      <p class="presentacion">SERVICOLD MD S.A.S</p>
-       <div class="info_saludo">
-        <p class="parrafo">Llegamos para servirle</p>
-        <h1>BIENVENIDO DE NUEVO</h1>
-        <p class="parrafo2">Servicio, calidad, economía y garantías. Estamos prestos a dar solucion a cada una de tus necesidades</p>
+        <p class="presentacion">SERVICOLD MD S.A.S</p>
+        <div class="info_saludo">
+            <p class="parrafo">Llegamos para servirle</p>
+            <h1>BIENVENIDO DE NUEVO</h1>
+            <p class="parrafo2">Servicio, calidad, economía y garantías. Estamos prestos a dar solucion a cada una de
+                tus necesidades</p>
+        </div>
     </div>
-</div>
-    <div class="contenedor_login">
-        <h2>INICIO DE SESION</h2>
+    <div class="container-form">
+        <div class="contenedor_login">
+            <h2>INICIO DE SESION</h2>
+        </div>
+        <div class="frm-login">
+            <input id="input.electronico" placeholder="Ingrese correo electronico" type="email">
+            <input id="input.password" placeholder="Ingrese contraseña" type="password">
+            <p>Perdiste tu contraseña</p>
+            <button>INICIAR SESION</button>
+        </div>
     </div>
-    <div class="frm-login">
-        <input id="input.electronico" placeholder="Ingrese correo electronico"type="email"> 
-        <input id="input.password" placeholder="Ingrese contraseña"type="password">
-        <p>Perdiste tu contraseña</p>
-        <button>INICIAR SESION</button>
-    </div>
-</div> 
+
 </body>
 
 </html>
