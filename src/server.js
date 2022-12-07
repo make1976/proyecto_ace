@@ -31,7 +31,7 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 //app.use(express.urlencoded({ extended: true }));
 //Ajustes de variables de entorno
-app.use('/public', express.static(path.join(__dirname, '../../public')));
+app.use('/public', express.static(path.join(__dirname, "../public")));
 app.use(`/login`, Login);
 
 app.get("/", (req, res) => {
