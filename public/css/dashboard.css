@@ -1,6 +1,7 @@
 *{
        margin: 0;
        padding: 0;       
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .app-header{
@@ -12,17 +13,20 @@
        margin-left: 20vw;
 }
 
-.home-button{
+/* .home-button{
        margin-top: 3vh;
        margin-left: 2vw;
-}
+} */
 
 .search-bar{
        height: 4vh;
        width: 63vw;
+       margin-top: 15px;
        margin-left: 3vw;
        margin-right: 3vw;
 }
+
+
 
 .left-aside{
        display: inline-block;
@@ -83,6 +87,7 @@
 
 .statics{
        display: inline-block;
+       text-align: center;
        position: fixed;
        height: 25vh;
        width:78vw;
@@ -90,6 +95,11 @@
        border-radius: 2px black solid;
        margin-top: 12vh;
        margin-left: 1vw;
+}
+
+.welcome{
+       margin-top: 45px;
+       font-size: 60px;
 }
 
 .section2{
@@ -102,6 +112,10 @@
        margin-left: 1vw;
 }
 
+.statics-img{
+       margin-left: 45px;
+}
+
 .section3{
        background-color: #ECF2D5;
        display: inline-block;
@@ -110,4 +124,10 @@
        width: 38vw;
        margin-top: 39vh;
        margin-left: 41vw;
+}
+
+.tech-img{
+       margin: 20px;
+       width: 95%;
+       height: 95%;
 }
