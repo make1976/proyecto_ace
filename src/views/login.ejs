@@ -19,17 +19,24 @@
                 tus necesidades</p>
         </div>
     </div>
-    <div class="container-form">
-        <div class="contenedor_login">
-            <h2>INICIO DE SESION</h2>
+    <form action="/login/login" method="post">
+        <div class="container-form">
+            <div class="contenedor_login">
+                <h2>INICIO DE SESION</h2>
+            </div>
+            <div class="frm-login">
+                <input id="input.electronico" name="email" placeholder="Ingrese correo electronico" type="email">
+                <input id="input.password" name="pass" placeholder="Ingrese contraseña" type="password">
+                <p>Perdiste tu contraseña</p>
+                <button>INICIAR SESION</button>
+                <button type="button">
+                    <a href="/login/register">
+                        Registrarse
+                    </a>
+                </button>
+            </div>
         </div>
-        <div class="frm-login">
-            <input id="input.electronico" placeholder="Ingrese correo electronico" type="email">
-            <input id="input.password" placeholder="Ingrese contraseña" type="password">
-            <p>Perdiste tu contraseña</p>
-            <button>INICIAR SESION</button>
-        </div>
-    </div>
+    </form>
 
 </body>
 

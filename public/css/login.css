@@ -112,6 +112,10 @@ body {
     color: #fff;
     margin-top: 2rem;
 }
+.frm-login > button > a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .frm-login > button:hover,
 .frm-login > button:focus {
