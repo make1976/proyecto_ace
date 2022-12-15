@@ -33,7 +33,6 @@ router.post("/register", async (req, res) => {
   const query = `insert into main_user (name, last_name, email, rol_id, password) values(?,?,?,?,?)`;
   const response = await prPool.execute(query, [...saveData]);
   const email = new Mail;
-  console.log(e_mail);
   email.sendEMail({
     to: e_mail,
     from: process.env.MAIL_SYSTEM,

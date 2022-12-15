@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="/public/css/dashboard.css">
+       <script src="https://kit.fontawesome.com/45864c1d0d.js" crossorigin="anonymous"></script>
+       <title>dashboard</title>
+</head>
+
+<body>
+       <header class="app-header">
+              <input type="search" name="" id="" placeholder="search" class="search-bar">
+              <label for="">
+                     <i class="fa-solid fa-user"></i>
+                     <select name="" id="">
+                            <option value="" disabled></option>
+                            <option value=""><a href="">Perfil</a></option>
+                            <option value=""><a href=""></a>Cerrar sesion</option>
+                     </select>
+              </label>
+       </header>
+       <aside class="left-aside">
+              <section class="logo-section">
+                     <h1 class="logo">SERVICOLD</h1>
+              </section>
+              <section class="nav-bar-section">
+                     <ul class="nav-list">
+                            <li class="inbox"><a href="" target="_blank"><i class="fa-solid fa-house"></i> Dashboard</a>
+                            <li class="inbox"><a href="" target="_blank"><i class="fa-regular fa-bell"></i>
+                                          Notificaciones</a>
+                            <li class="inbox"><a href="" target="_blank"><i class="fa-solid fa-inbox"></i> Bandeja de
+                                          entrada</a>
+                            <li class="log-out"><a href="" target="_blank"><i class="fa-solid fa-users"></i> Gestion de
+                                          usuarios</a>
+                            <li class="settings"><a href="" target="_blank"><i class="fa-solid fa-gear"></i>
+                                          Configuracion</a>
+                     </ul>
+              </section>
+       </aside>
+       <section class="statics">
+              <h1 class="welcome">BIENVENIDO A SERVICOLD</h1>
+       </section>
+       <section class="section2-form" style="padding: 5px 5px 5px 5px;">
+              <form action="/home/save" method="post">
+                     <label>Fecha</label>
+                     <input type="date" name="date">
+                     <br><br>
+                     <label>Persona que recibe</label>
+                     <input type="text" name="receive">
+                     <label>Propiedad de:</label>
+                     <input type="text" name="property">
+                     <label>Marca congelador</label>
+                     <input type="text" name="brand">
+                     <br><br>
+                      <label>Direccion</label>
+                     <input type="text" name="address">
+                      <label>Marca congelador</label>
+                     <input type="text" name="brand">
+                      <label>Falla reportada</label>
+                     <input type="text" name="fail">
+                     <br><br>
+                     <textarea placeholder="Descripcion de falla" rows="10" cols="100" name="description"></textarea>
+                     <br><br>
+                     <button>Enviar</button>
+              </form>
+       </section>
+</body>
+
+</html>

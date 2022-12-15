@@ -112,6 +112,17 @@
        margin-left: 1vw;
 }
 
+.section2-form{
+       background-color: #ECF2D5;
+       display: inline-block;
+       position: fixed;
+       height: 60vh;
+       width: 75%;
+       margin-top: 39vh;
+       margin-left: 1vw;
+}
+
+
 .statics-img{
        margin-left: 45px;
 }

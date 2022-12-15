@@ -23,7 +23,7 @@ app.use(cors(corsConfig));
 app.options("*", cors(corsConfig));
 app.engine('ejs', require('express-ejs-extend'));
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../src/views'));
+app.set('views', path.join(__dirname, './views'));
 app.set("port", process.env.PORT || 3001);
 app.use(express.urlencoded({ extended: true }));
 // parse requests of content-type - application/json
